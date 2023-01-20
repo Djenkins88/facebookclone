@@ -1,40 +1,51 @@
+import StoryCard from "./StoryCard"
+
 const stories = [
     {
         name: "Sonny Sangna",
-        src: "https://links.papareact.com/zot",
-        profile: "https://linls.papareact.com/l4v",
+        src: "https://links.papareact.com/zof",
+        profile: "https://links.papareact.com/l4v",
+            
     },
     {
         name: "Elon Musk",
         src: "https://links.papareact.com/4zn",
-        profile: "https://linls.papareact.com/kxk",
+        profile: "https://links.papareact.com/kxk",
     },
     {
         name: "Jeff Bezos",
         src: "https://links.papareact.com/k2j",
-        profile: "https://linls.papareact.com/f0o",
+        profile: "https://links.papareact.com/f0p",
     },
     {
         name: "Mark Zuckerberg",
-        src: "https://links.papareact.com/zql",
-        profile: "https://linls.papareact.com/snf",
+        src: "https://links.papareact.com/xql",
+        profile: "https://links.papareact.com/snf",
     },
     {
         name: "Bill Gates",
         src: "https://links.papareact.com/4u4",
-        profile: "https://linls.papareact.com/zvy",
+        profile: "https://links.papareact.com/zvy",
     },
 ]
 
 function Stories() {
   return (
     <div className="flex justify-center space-x-3 mx-auto ">
-        {stories.map((story) => {
-            <StoryCard name={story.name} src={story.src} profile={story.profile} />
-        })}
-
+        {stories.map((story) => (
+            <StoryCard
+                key={story.src} 
+                name={story.name} 
+                src={story.src} 
+                profile={story.profile}
+                width={40}
+                heigth={40}
+                layout='fixed'
+                objectFit="cover"
+            />
+        ))}
     </div>
-  )
+    )
 }
 
 export default Stories
