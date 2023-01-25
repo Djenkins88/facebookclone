@@ -38,10 +38,6 @@ function Stories() {
                 name={story.name} 
                 src={story.src} 
                 profile={story.profile}
-                width={40}
-                heigth={40}
-                layout='fixed'
-                objectFit="cover"
             />
         ))}
     </div>

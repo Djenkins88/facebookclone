@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroicons/react": "v1",
     "dotenv": "^16.0.3",
+    "firebase": "^9.16.0",
     "init": "^0.1.2",
     "next": "12.3.1",
     "next-auth": "^4.16.4",
